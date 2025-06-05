@@ -8,3 +8,7 @@ A responsive one-page application developed with Vue 3, Sass, and Bootstrap 5 as
 - Mobile-first design
 - Bootstrap 5 layout
 - Sass custom styling
+
+## Project Setup
+npm install
+npm run dev
