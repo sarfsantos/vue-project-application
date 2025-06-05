@@ -10,5 +10,8 @@ A responsive one-page application developed with Vue 3, Sass, and Bootstrap 5 as
 - Sass custom styling
 
 ## Project Setup
+- Install Node.js (https://nodejs.org/pt)
+  
+- npm init vue@latest
 - npm install
 - npm run dev
