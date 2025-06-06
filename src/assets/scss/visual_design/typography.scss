@@ -45,7 +45,6 @@ a {
 }
 
 /*font family*/
-
 .primary-font {
   font-family: $primary-font;
 }
@@ -57,23 +56,21 @@ a {
 }
 
 /*text algin*/
-
 .text-left {
   text-align: left;
 }
 .text-center {
   text-align: center;
 }
-.text-left {
+.text-right {
   text-align: right;
 }
 
 /*headings*/
-
 .heading-1 {
   font-size: 68px;
   line-height: 56px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -3.42px;
   font-family: $secondary-font;
   color: $black-100;
@@ -84,13 +81,35 @@ a {
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 112px;
+    font-size: 144px;
     line-height: 124px;
   }
 }
 
-/*subheadings*/
+.heading-2 {
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  color: $black-100;
+  font-family: $secondary-font;
 
+  @media screen and (min-width: 1280px) {
+    font-size: 60px;
+    line-height: 56px;
+  }
+}
+
+.heading-3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: $black-100;
+  font-family: $secondary-font;
+}
+
+/*subheadings*/
 .subheading-1 {
   font-size: 32px;
   line-height: 36px;
@@ -101,11 +120,35 @@ a {
 }
 
 /*body texts*/
+.body-1 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: -0.075px;
+  color: $black-80;
+  font-family: $primary-font;
+}
 
 /*labels*/
+.label-1 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: -0.075px;
+  color: $black-80;
+  font-family: $primary-font;
+}
+
+.label-2 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: $green-200;
+  font-family: $tertiary-font;
+}
 
 /*menu*/
-
 .menu-item {
   font-size: 14px;
   line-height: 16px;
@@ -115,9 +158,9 @@ a {
 }
 
 /*buttons*/
-
 .button-1 {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  letter-spacing: -0.35px;
 }

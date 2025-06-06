@@ -8,7 +8,7 @@
   >
     <p class="button-text button-1" :class="textColor">
       {{ buttonText }}
-      <span v-if="showIcon" class="material-icons-round icon" aria-hidden="true"> call_made </span>
+      <span class="material-icons-round icon" aria-hidden="true"> call_made </span>
     </p>
   </div>
 </template>
@@ -26,10 +26,6 @@ defineProps({
   textColor: {
     type: String,
     default: 'white-100',
-  },
-  showIcon: {
-    type: Boolean,
-    default: false,
   },
 })
 

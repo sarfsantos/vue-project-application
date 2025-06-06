@@ -31,7 +31,7 @@
 
 <script setup>
 import { ref, defineEmits } from 'vue'
-import PrimaryButton from '@/components/buttons/PrimaryButton.vue'
+import PrimaryButton from '@/components/buttons/ModalButton.vue'
 
 const emit = defineEmits(['toggle-menu'])
 

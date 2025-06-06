@@ -27,7 +27,7 @@
 <script setup>
 import { ref } from 'vue'
 import PageMenu from '@/components/navigation/PageMenu.vue'
-import PrimaryButton from '@/components/buttons/PrimaryButton.vue'
+import PrimaryButton from '@/components/buttons/ModalButton.vue'
 
 const isMenuOpen = ref(false)
 

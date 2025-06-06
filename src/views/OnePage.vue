@@ -1,91 +1,20 @@
 <template>
-  <section class="home-container">
+  <div class="home-container">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h1 class="heading-1">Browse everything.</h1>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
-          <p>content</p>
+          <h1 class="heading-1 page-title">Browse everything.</h1>
+          <PageHeroBanner />
+          <LogosList />
+          <BenefitsSection />
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
+
+<script setup>
+import LogosList from '@/components/sections/LogosList.vue'
+import PageHeroBanner from '@/components/sections/PageHeroBanner.vue'
+import BenefitsSection from '@/components/sections/BenefitsSection.vue'
+</script>
