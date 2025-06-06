@@ -8,14 +8,14 @@
             <div class="menu-fixed-wrapper">
               <PageMenu @toggle-menu="handleToggleMenu" />
             </div>
-            <PrimaryButton
-              class="button-only-desktop"
+            <ModalButton
+              customClass="button-only-desktop"
               buttonText="Learn More"
               buttonColor="bg-primary"
               buttonHoverColor="bg-primary-hover"
               textColor="white-100"
               :showIcon="true"
-              @click="handleButtonClick"
+              @click="openModal"
             />
           </div>
         </div>
@@ -27,15 +27,11 @@
 <script setup>
 import { ref } from 'vue'
 import PageMenu from '@/components/navigation/PageMenu.vue'
-import PrimaryButton from '@/components/buttons/ModalButton.vue'
+import ModalButton from '@/components/buttons/ModalButton.vue'
 
 const isMenuOpen = ref(false)
 
 function handleToggleMenu(open) {
   isMenuOpen.value = open
-}
-
-const handleButtonClick = () => {
-  console.log('Clicked!')
 }
 </script>

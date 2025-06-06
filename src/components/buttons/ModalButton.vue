@@ -1,7 +1,7 @@
 <template>
   <div
     class="button-wrapper"
-    :class="buttonColor"
+    :class="[buttonColor, customClass]"
     @click="modalVisible = true"
     @mouseenter="hover = true"
     @mouseleave="hover = false"
@@ -51,6 +51,10 @@ defineProps({
   showIcon: {
     type: Boolean,
     default: false,
+  },
+  customClass: {
+    type: String,
+    default: '',
   },
 })
 

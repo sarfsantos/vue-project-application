@@ -1,0 +1,52 @@
+.tabs-container {
+  width: 100%;
+
+  .tab-buttons {
+    display: flex;
+    gap: 0px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1280px) {
+      gap: 12px;
+    }
+
+    button {
+      padding: 8px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      color: $black-80;
+      &.active,
+      &:hover {
+        color: $black-100;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding: 12px 20px;
+      }
+    }
+    .subheading-2 {
+      font-size: 18px;
+      line-height: 20px;
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .tab-content {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    padding: 32px;
+    background-color: $white-40;
+    border-radius: 30px;
+    li {
+      padding: 12px;
+      font-family: $tertiary-font;
+      color: $black-100;
+    }
+  }
+}

@@ -7,6 +7,9 @@
           <PageHeroBanner />
           <LogosList />
           <BenefitsSection />
+          <SlideSection />
+          <SpecsSection />
+          <QuoteSection />
         </div>
       </div>
     </div>
@@ -17,4 +20,7 @@
 import LogosList from '@/components/sections/LogosList.vue'
 import PageHeroBanner from '@/components/sections/PageHeroBanner.vue'
 import BenefitsSection from '@/components/sections/BenefitsSection.vue'
+import SlideSection from '@/components/sections/SlideSection.vue'
+import SpecsSection from '@/components/sections/SpecsSection.vue'
+import QuoteSection from '@/components/sections/QuoteSection.vue'
 </script>

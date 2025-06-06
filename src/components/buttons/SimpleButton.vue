@@ -1,20 +1,46 @@
 <template>
-  <div
+  <!--renderize when url is internal-->
+  <router-link
+    v-if="isInternal"
+    :to="to"
     class="button-wrapper"
     :class="buttonColor"
-    @click="onClick"
     @mouseenter="hover = true"
     @mouseleave="hover = false"
   >
-    <p class="button-text button-1" :class="textColor">
-      {{ buttonText }}
-      <span class="material-icons-round icon" aria-hidden="true"> call_made </span>
-    </p>
+    <p class="button-text button-1" :class="textColor">{{ buttonText }}</p>
+  </router-link>
+
+  <!--renderize when url is external-->
+  <a
+    v-else-if="isExternal"
+    :href="to"
+    class="button-wrapper"
+    :class="buttonColor"
+    target="_blank"
+    rel="noopener"
+    @mouseenter="hover = true"
+    @mouseleave="hover = false"
+  >
+    <p class="button-text button-1" :class="textColor">{{ buttonText }}</p>
+  </a>
+  <!--renderize for local actions-->
+  <div
+    v-else
+    class="button-wrapper"
+    :class="buttonColor"
+    @click="handleClick"
+    @mouseenter="hover = true"
+    @mouseleave="hover = false"
+  >
+    <p class="button-text button-1" :class="textColor">{{ buttonText }}</p>
   </div>
 </template>
 
 <script setup>
-defineProps({
+import { computed, defineProps, defineEmits } from 'vue'
+
+const props = defineProps({
   buttonText: {
     type: String,
     default: 'Learn more',
@@ -27,11 +53,20 @@ defineProps({
     type: String,
     default: 'white-100',
   },
+  to: {
+    type: String,
+    default: null,
+  },
 })
 
 const emit = defineEmits(['click'])
 
-const onClick = () => {
-  emit('click')
+const isExternal = computed(() => props.to?.startsWith('http'))
+const isInternal = computed(() => props.to && !isExternal.value)
+
+function handleClick(event) {
+  if (!props.to) {
+    emit('click', event)
+  }
 }
 </script>

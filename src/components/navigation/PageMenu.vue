@@ -15,13 +15,13 @@
 
         <!-- button only visible in mobile -->
         <li class="button-wrapper mobile-only-button">
-          <PrimaryButton
+          <ModalButton
             buttonText="Learn More"
             buttonColor="bg-primary"
             buttonHoverColor="bg-primary-hover"
             textColor="white-100"
             :showIcon="true"
-            @click="handleClick"
+            @click="openModal"
           />
         </li>
       </ul>
@@ -31,7 +31,7 @@
 
 <script setup>
 import { ref, defineEmits } from 'vue'
-import PrimaryButton from '@/components/buttons/ModalButton.vue'
+import ModalButton from '@/components/buttons/ModalButton.vue'
 
 const emit = defineEmits(['toggle-menu'])
 
@@ -40,9 +40,5 @@ const isOpen = ref(false)
 function toggleMenu() {
   isOpen.value = !isOpen.value
   emit('toggle-menu', isOpen.value)
-}
-
-function handleClick() {
-  console.log('Clicked!')
 }
 </script>
