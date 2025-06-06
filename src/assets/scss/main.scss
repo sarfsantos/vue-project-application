@@ -1,0 +1,11 @@
+/*import bootstrap for griding*/
+@import '/node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+/*import general styles*/
+@import 'visual_design/colors';
+@import 'visual_design/typography';
+@import 'buttons/buttons';
+
+/*navigation*/
+@import 'navigation/menu';
+@import 'navigation/header';

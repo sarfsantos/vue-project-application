@@ -1,0 +1,123 @@
+/*fonts variables*/
+$primary-font: 'DM Sans', sans-serif;
+$secondary-font: 'Crimson Text', serif;
+$tertiary-font: 'Roboto Mono', monospace;
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+label,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: $primary-font;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: $black-100;
+}
+
+body {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*font family*/
+
+.primary-font {
+  font-family: $primary-font;
+}
+.secondary-font {
+  font-family: $secondary-font;
+}
+.tertiary-font {
+  font-family: $secondary-font;
+}
+
+/*text algin*/
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: right;
+}
+
+/*headings*/
+
+.heading-1 {
+  font-size: 68px;
+  line-height: 56px;
+  font-weight: 400;
+  letter-spacing: -3.42px;
+  font-family: $secondary-font;
+  color: $black-100;
+
+  @media screen and (min-width: 768px) {
+    font-size: 76px;
+    line-height: 64px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 112px;
+    line-height: 124px;
+  }
+}
+
+/*subheadings*/
+
+.subheading-1 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  color: $black-100;
+  font-family: $primary-font;
+}
+
+/*body texts*/
+
+/*labels*/
+
+/*menu*/
+
+.menu-item {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  font-family: $primary-font;
+  color: $black-100;
+}
+
+/*buttons*/
+
+.button-1 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
