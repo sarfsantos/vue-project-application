@@ -1,0 +1,19 @@
+.footer-section {
+  padding-bottom: 40px;
+  .menu-list-footer {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    border-top: 1px solid $white-80;
+    display: flex;
+    align-items: center;
+    gap: 0px 24px;
+
+    .button-1 {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .button-1:hover {
+      opacity: 0.5;
+    }
+  }
+}

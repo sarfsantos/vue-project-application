@@ -27,6 +27,10 @@ $green-60: #dfecc6;
 }
 .green-60 {
   background-color: $green-60;
+
+  &:hover {
+    background-color: $green-100;
+  }
 }
 
 .green-text-200 {
@@ -41,4 +45,8 @@ $green-60: #dfecc6;
 
 .white-text-100 {
   color: $white-100;
+}
+
+.black-text-100 {
+  color: $black-100;
 }

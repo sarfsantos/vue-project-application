@@ -17,6 +17,10 @@
     }
   }
 
+  &:hover .button-text {
+    color: $white-100;
+  }
+
   .button-text {
     display: flex;
     align-items: center;

@@ -12,10 +12,10 @@
     </p>
   </div>
   <PopModal v-model:visible="modalVisible">
-    <h2 class="heading-2">Want to learn more?</h2>
-    <p class="body-1">We'll get in touch as soon as possivel</p>
+    <h2 class="heading-2 text-left">Want to learn more?</h2>
+    <p class="body-1 p-0 text-left">We'll get in touch as soon as possivel</p>
     <form @submit.prevent="handleSubmit" class="modal-form">
-      <label for="email" class="label-2">Email:</label>
+      <label for="email" class="label-2 text-left">Email:</label>
       <div class="input">
         <input
           id="email"

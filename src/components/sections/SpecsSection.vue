@@ -12,7 +12,7 @@
           <SimpleButton
             buttonText="Discover More"
             buttonColor="green-60"
-            textColor="green-text-200"
+            textColor="black-text-100"
             to="https://plugin-value-scrum.figma.site/"
           />
         </div>
